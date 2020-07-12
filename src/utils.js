@@ -83,22 +83,22 @@ export const checkCarTaxType = (date, cc) => {
     return 'No Calculation'
 }
 
-export const checkCO2Tax = co2 => {
+export const checkCO2Tax = (co2) => {
   if (co2 <= 90) {
     return 0
   } else if (co2 >= 91 && co2 <= 120) {
-    return co2 * 0.9
+    return (co2 * 0.9).toFixed(2)
   } else if (co2 >= 121 && co2 <= 140) {
-    return co2 * 0.98
+    return (co2 * 0.98).toFixed(2)
   } else if (co2 >= 141 && co2 <= 160) {
-    return co2 * 1.2
+    return (co2 * 1.2).toFixed(2)
   } else if (co2 >= 161 && co2 <= 180) {
-    return co2 * 1.85
+    return (co2 * 1.85).toFixed(2)
   } else if (co2 >= 181 && co2 <= 200) {
-    return co2 * 2.45
+    return (co2 * 2.45).toFixed(2)
   } else if (co2 >= 201 && co2 <= 250) {
-    return co2 * 3.05
+    return (co2 * 3.05).toFixed(2)
   } else if (co2 >= 251) {
-    return co2 * 3.72
+    return (co2 * 3.72).toFixed(2)
   }
 }
