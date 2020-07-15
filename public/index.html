@@ -25,6 +25,85 @@
     -->
     <title>Υπολογισμός Τελών Κυκλοφορίας 2020</title>
 
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "HowTo",
+      "name": "Υπολογισμός τελών κυκλοφορίας για αυτοκίνητα 2020.",
+      "description": "Υπολογίστε τα τέλη κυκλοφορίας του αυτοκινήτου σας συμπληρώνοντας τα κυβικά ή τους ρύπους και την ημερομηνία ταξινόμησης. Αυτόματα θα λάβετε την απάντηση για το κόστος.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://car-tax-calculator.s3.amazonaws.com/images/photo_1.png",
+        "height": "620",
+        "width": "756",
+      },
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": "200"
+      },
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Ημερομηνία Ταξινόμησης"
+        }, {
+          "@type": "HowToSupply",
+          "name": "Ποσότητα εκπομπής Co2"
+        }, {
+          "@type": "HowToSupply",
+          "name": "Κυβισμός οχήματος"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "url": "https://car-tax.panosangelopoulos.me/",
+          "name": "Επιλέξτε την ημερομηνία ταξινόμησης του οχήματός σας.",
+          "itemListElement": [{
+            "@type": "HowToTip",
+            "text": "Αναζητήστε την ημερομηνία ταξινόμησης του οχήματός σας στην άδεια κυκλοφορίας."
+          }],
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://car-tax-calculator.s3.amazonaws.com/images/photo_1.png",
+            "height": "620",
+            "width": "756"
+          }
+        }, {
+          "@type": "HowToStep",
+          "name": "Επιλέξτε την ποσότητα εκπομπής ρύπων (CO2).",
+          "url": "https://car-tax.panosangelopoulos.me/",
+          "itemListElement": [{
+            "@type": "HowToTip",
+            "text": "Αναζητήστε την ποσότητα εκπομπής ρύπων του οχήματός σας στην άδεια κυκλοφορίας."
+          }],
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://car-tax-calculator.s3.amazonaws.com/images/photo_2.png",
+            "height": "530",
+            "width": "752"
+          }
+        }, {
+          "@type": "HowToStep",
+          "name": "Δείτε τον συνολικό κόστος των τελών.",
+          "url": "https://example.com/kitchen#step3",
+          "itemListElement": [{
+            "@type": "HowToTip",
+            "text": "Ο υπολογισμός γίνεται αυτόματα και επιστρέφει το ποσό των τελών κυκλοφορίας σε ευρώ."
+          }],
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://car-tax-calculator.s3.amazonaws.com/images/photo_3.png",
+            "height": "488",
+            "width": "750"
+          }
+        }
+      ],
+      "totalTime": "P2D"
+    }
+    </script>
+
+
     <meta
       name="description"
       content="Υπολογισμός των τελών κυκλοφορίας με βάση την ημερομηνία ταξινόμησης, τον κυβισμό και την εκπομπή ρύπων."
